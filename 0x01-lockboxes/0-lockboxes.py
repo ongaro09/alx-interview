@@ -22,7 +22,7 @@ def canUnlockAll(boxes):
     n = len(boxes)
     unlocked = [False] * n
     unlocked[0] = True
-    keys = boxes[0].copy()  # Start with keys from the first box
+    keys = boxes[0].copy()
 
     while keys:
         new_key = keys.pop()
