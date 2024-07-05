@@ -3,14 +3,15 @@
 Solution to lockboxes problem
 """
 
+
 def canUnlockAll(boxes):
     """
     Determines whether a series of locked boxes can be opened
     based on keys that can be attained.
-    
+
     Args:
         boxes (list of list of int): A list where each index represents a box containing keys to other boxes.
-    
+
     Returns:
         bool: True if all boxes can be opened, else False.
     """
@@ -31,4 +32,3 @@ def canUnlockAll(boxes):
             keys.extend(boxes[new_key])
 
     return all(unlocked)
-    
