@@ -31,3 +31,4 @@ def canUnlockAll(boxes):
             keys.extend(boxes[new_key])
 
     return all(unlocked)
+    
